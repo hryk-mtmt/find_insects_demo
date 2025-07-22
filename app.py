@@ -39,5 +39,7 @@ def predict():
     except Exception as e:
         return jsonify({ "error": str(e) }), 500
 
+''' Deploy要修正（コメントアウト）
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, ssl_context="adhoc")
+'''

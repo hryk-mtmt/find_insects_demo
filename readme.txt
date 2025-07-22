@@ -1,4 +1,4 @@
-＜アプリ＞クワガタとカブトムシを判定するアプリ
+＜アプリ＞クワガタやカブトムシを判定するアプリ
 仕様
 １．iphoneのCameraで対象画像を映し、映像をServerに送る 
       （Localネットワークで接続 port:5000）
@@ -14,7 +14,7 @@
 
 
 起動：
- cd server
+ # cd server(不要)
  python app.py
 
 
