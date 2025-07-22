@@ -12,9 +12,9 @@ CORS(app)  # クロスオリジン許可（JSとの通信用）
 model_path = os.path.join("model", "last.pt")
 model = YOLO(model_path)
 
-@app.route("/client/<path:filename>")
-def serve_client_file(filename):
-    return send_from_directory("client", filename)
+@app.route("/")
+def index():
+    return send_from_directory("client","index.html")
 
 @app.route("/predict", methods=["POST"])
 def predict():
