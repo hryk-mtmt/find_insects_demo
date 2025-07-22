@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>My first yolo demo</title>
+  <style>
+    video, canvas, img {
+      width: 100%;
+      max-width: 480px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>📷 カメラ映像</h2>
+  <video id="video" autoplay muted playsinline></video>
+  <!-- <button onclick="startCamera()">カメラ起動</button> -->
+  <br>
+  <button onclick="capture()">クワガタやカブトムシがいたらキャプチャ！</button>
+
+  <h3>🖼️ 推論</h3> 
+  <img id="result" alt="結果画像" /> 
+  <canvas id="canvas" style="display:none;"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
