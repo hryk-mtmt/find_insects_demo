@@ -60,7 +60,7 @@ function capture() {
   // FlaskにPOST送信
   // 以下はdeploy用修正git
   //fetch("https://192.168.0.25:5000/predict", {
-  fetch("https://github.com/hryk-mtmt/find_insects_demo.git/predict", {
+  fetch("https://find_insects_demo.ongender.com/predict", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ image: base64Image })
